@@ -1,0 +1,14 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;",,,,,,,,,,,,,,,,";"GND VIA";17;"";;;
+2;"C1";"C_0603";1;"0.1uF";;;
+3;"C2,C3";"C_0603";2;"22pF";;;
+4;"IC1";"QFN-24-1EP_4x4mm_Pitch0.5mm";1;"ATTINY24A-M";;;
+5;"P1";"100MIL_ST";1;"MOTOR";;;
+6;"P2";"100MIL_ST";1;"VREF";;;
+7;"P3,P4";"100MIL_ST";2;"POWER";;;
+8;"P5";"Pin_Header_Straight_2x03_Pitch2.54mm";1;"ICSP";;;
+9;"Q1";"SOIC-8_3.9x4.9mm_Pitch1.27mm";1;"DMHC3025LSD";;;
+10;"Q2,Q3";"SOT-23";2;"Q_NMOS_DGS";;;
+11;"R1,R3,R4,R5";"R_0603";4;"1K";;;
+12;"R2";"R_1812";1;"R";;;
+13;"Y1";"Crystal_HC49-U_Vertical";1;"Crystal";;;

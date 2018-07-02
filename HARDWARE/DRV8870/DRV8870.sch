@@ -1,0 +1,290 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DRV8870-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DRV8870 DC Motor Driver Prototype"
+Date "2018-07-02"
+Rev "A"
+Comp "Mechanism Mobility and Multifunctional Design Lab"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DRV8870 U1
+U 1 1 5B0EF188
+P 5900 3050
+F 0 "U1" H 5750 3100 60  0000 C CNN
+F 1 "DRV8870" H 5900 2200 60  0000 C CNN
+F 2 "Housings_SOIC:HTSOP-8-1EP_3.9x4.9mm_Pitch1.27mm" H 5650 3250 60  0001 C CNN
+F 3 "" H 5650 3250 60  0001 C CNN
+	1    5900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 5B0EF1A3
+P 8300 4450
+F 0 "P4" H 8300 4600 50  0000 C CNN
+F 1 "MOTOR" V 8400 4450 50  0000 C CNN
+F 2 "MOD:100MIL_ST" H 8300 4450 50  0001 C CNN
+F 3 "" H 8300 4450 50  0000 C CNN
+	1    8300 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B0EF221
+P 6450 3900
+F 0 "R1" V 6530 3900 50  0000 C CNN
+F 1 "0.1" V 6450 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812" V 6380 3900 50  0001 C CNN
+F 3 "" H 6450 3900 50  0000 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5B0EF31F
+P 6450 4150
+F 0 "#PWR01" H 6450 3900 50  0001 C CNN
+F 1 "GND" H 6450 4000 50  0000 C CNN
+F 2 "" H 6450 4150 50  0000 C CNN
+F 3 "" H 6450 4150 50  0000 C CNN
+	1    6450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5B0EF37D
+P 5450 3850
+F 0 "#PWR02" H 5450 3600 50  0001 C CNN
+F 1 "GND" H 5450 3700 50  0000 C CNN
+F 2 "" H 5450 3850 50  0000 C CNN
+F 3 "" H 5450 3850 50  0000 C CNN
+	1    5450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5B0EF430
+P 8300 2950
+F 0 "P1" H 8300 3100 50  0000 C CNN
+F 1 "PWR" V 8400 2950 50  0000 C CNN
+F 2 "MOD:100MIL_ST" H 8300 2950 50  0001 C CNN
+F 3 "" H 8300 2950 50  0000 C CNN
+	1    8300 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5B0EF59E
+P 8300 3500
+F 0 "P2" H 8300 3650 50  0000 C CNN
+F 1 "DIR" V 8400 3500 50  0000 C CNN
+F 2 "MOD:100MIL_ST" H 8300 3500 50  0001 C CNN
+F 3 "" H 8300 3500 50  0000 C CNN
+	1    8300 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 5B0EF5D8
+P 8300 3900
+F 0 "P3" H 8300 4050 50  0000 C CNN
+F 1 "VREF" V 8400 3900 50  0000 C CNN
+F 2 "MOD:100MIL_ST" H 8300 3900 50  0001 C CNN
+F 3 "" H 8300 3900 50  0000 C CNN
+	1    8300 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 5B0EF67C
+P 8500 2800
+F 0 "#PWR03" H 8500 2650 50  0001 C CNN
+F 1 "VCC" H 8500 2950 50  0000 C CNN
+F 2 "" H 8500 2800 50  0000 C CNN
+F 3 "" H 8500 2800 50  0000 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5B0EF69C
+P 5450 3050
+F 0 "#PWR04" H 5450 2900 50  0001 C CNN
+F 1 "VCC" H 5450 3200 50  0000 C CNN
+F 2 "" H 5450 3050 50  0000 C CNN
+F 3 "" H 5450 3050 50  0000 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5B0EF735
+P 8500 3100
+F 0 "#PWR05" H 8500 2850 50  0001 C CNN
+F 1 "GND" H 8500 2950 50  0000 C CNN
+F 2 "" H 8500 3100 50  0000 C CNN
+F 3 "" H 8500 3100 50  0000 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 3450 2    47   Output ~ 0
+IN2
+Text GLabel 8600 3550 2    47   Output ~ 0
+IN1
+Text GLabel 8600 3850 2    47   Output ~ 0
+VREF
+$Comp
+L GND #PWR06
+U 1 1 5B0EF874
+P 8500 4050
+F 0 "#PWR06" H 8500 3800 50  0001 C CNN
+F 1 "GND" H 8500 3900 50  0000 C CNN
+F 2 "" H 8500 4050 50  0000 C CNN
+F 3 "" H 8500 4050 50  0000 C CNN
+	1    8500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4150 6450 4050
+Wire Wire Line
+	6350 3750 6450 3750
+Wire Wire Line
+	5450 3650 5450 3850
+Connection ~ 5450 3750
+Wire Wire Line
+	5450 3150 5450 3050
+Wire Wire Line
+	8500 2800 8500 2900
+Wire Wire Line
+	8500 3100 8500 3000
+Wire Wire Line
+	8600 3550 8500 3550
+Wire Wire Line
+	8500 3450 8600 3450
+Wire Wire Line
+	8600 3850 8500 3850
+Wire Wire Line
+	8500 4050 8500 3950
+Text GLabel 5350 3300 0    47   Input ~ 0
+IN2
+Text GLabel 5350 3400 0    47   Input ~ 0
+IN1
+Text GLabel 5350 3500 0    47   Input ~ 0
+VREF
+Wire Wire Line
+	5350 3400 5450 3400
+Wire Wire Line
+	5450 3300 5350 3300
+Wire Wire Line
+	5350 3500 5450 3500
+Text GLabel 6450 3150 2    47   Output ~ 0
+OUT1
+Wire Wire Line
+	6450 3150 6350 3150
+Text GLabel 6450 3300 2    47   Output ~ 0
+OUT2
+Wire Wire Line
+	6450 3300 6350 3300
+Text GLabel 8600 4400 2    47   Input ~ 0
+OUT1
+Wire Wire Line
+	8600 4400 8500 4400
+Text GLabel 8600 4500 2    47   Input ~ 0
+OUT2
+Wire Wire Line
+	8600 4500 8500 4500
+$Comp
+L C C2
+U 1 1 5B0EFF2E
+P 5000 3300
+F 0 "C2" H 5025 3400 50  0000 L CNN
+F 1 "0.1u" H 5025 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5038 3150 50  0001 C CNN
+F 3 "" H 5000 3300 50  0000 C CNN
+	1    5000 3300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4800 3150 5450 3150
+$Comp
+L GND #PWR07
+U 1 1 5B0EFFA4
+P 5000 3550
+F 0 "#PWR07" H 5000 3300 50  0001 C CNN
+F 1 "GND" H 5000 3400 50  0000 C CNN
+F 2 "" H 5000 3550 50  0000 C CNN
+F 3 "" H 5000 3550 50  0000 C CNN
+	1    5000 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3550 5000 3450
+$Comp
+L CP1 C1
+U 1 1 5B0F0001
+P 4800 3300
+F 0 "C1" H 4850 3200 50  0000 L CNN
+F 1 "47u" H 4800 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x7.7" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0000 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 3150
+$Comp
+L GND #PWR08
+U 1 1 5B0F01A8
+P 4800 3550
+F 0 "#PWR08" H 4800 3300 50  0001 C CNN
+F 1 "GND" H 4800 3400 50  0000 C CNN
+F 2 "" H 4800 3550 50  0000 C CNN
+F 3 "" H 4800 3550 50  0000 C CNN
+	1    4800 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3550 4800 3450
+Text Notes 4750 4700 0    47   ~ 0
+Itrip(A) = VREF(V) / (10 X Rsense)\n0.3V <= VREF <= 5V\nRsense = 0.1 Ohm\nItrip(max) = 5A   Itrip(3.3V VREF) = 3.3A    Itrip(min) = 0.3A
+Text Notes 8200 2500 0    60   ~ 0
+CONNECTORS
+Text Notes 5500 2800 0    60   ~ 0
+DRV8870 CIRCUIT
+$EndSCHEMATC
